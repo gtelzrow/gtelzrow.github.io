@@ -2,31 +2,60 @@
 <html>
 <head>
 	<style>
+		/* remove styles to external stylesheet */
+		/* also consider adding a resets.css file for other styles */
 		img {border-style: solid; color: black; border-width: thick;}
 		blockquote {font-style: italic;}
 		h2 {font-family: cursive; font-style: bazooka;}
-		</style>
+		</style> 
+		<!-- this line ^ should be un-indented -->
 	<title>GretchenATelzrow</title>
 		<link href="assets/normalize.css" rel="stylesheet">
+		<!-- this directory and CSS file does not exist ^ -->
+		<!-- this line ^ should be un-indented -->
 </head>
 <body>
 	<header>
+		<!-- Try not avoid "center" when possible – it has actually fallen out of style, -->
+		<!-- because it's redundant (use CSS to text-align: center any text) -->
 		<center>
 			<h1>Gretchen Telzrow</h1>
 				<h2>Freelance Event Registration Specialist</h2>
+				<!-- this line ^ should be un-indented -->
+				
+				<!-- NOTE: I will not add more line-by-line indentation comments from here on. -->
+				<!-- I advise going through whole HTML file on your own to make sure all indentation is correct. -->
+				<!-- If you have any confusion about when to indent or not to indent, please ask me for help during class. -->
+				<!-- RULE OF THUMB: whenever a tag is contained within the above tag, indent -->
+				<!-- ex: -->
+				<!-- <ul>
+					<li>list item 1</li>
+					<li>list item 2</li>
+				</ul> -->
+
 				<img src="Pic/me.jpeg" height="100" width="100">	
 					<blockquote> Talk is Cheap. Show Me the Code -LINUS TORVALDS 
 					</blockquote>
 		</center>
 	</header>
+	<!-- Since you have a "header" and "footer" section, I'd also include a "main" tag for the rest of your content below -->
+
+	<!-- The below seems like a nav, more than any regular ul -->
+	<!-- I'd wrap all of this in a nav tag -->
 	<ul>
 			<li><a href="#">Resume</a></li>
-			<li><a href="#">Testimonials</a>
+			<li><a href="#">Testimonials</a> <!-- missing a closing li tag here -->
 	</ul>
 
+	<!-- The "About Me" info below could be contained in a section tag -->
 	<h3>About Me</h3>
 		<p> Proactive leader with more than 4 years of experience coordinating planning and execution of events/projects. Understanding of client management and planning processes, including onsite setup, registration activities, and cross-referencing attendee information. Adept at overseeing progress of events and employee performance to ensure compliance to client expectations. Technical knowledge of Google applications, EventBrite, and Microsoft Office (Word, Excel, PowerPoint). Writing and speaking proficiency in Spanish; innate ability to build relationships in a diverse cultural atmosphere. </p>
+	
+	<!-- The "Experience" info below could be contained in a section tag -->
 	<h3>Experience</h3>
+		<!-- The below seems more like a list than a bunch of paragraphs -->
+		<!-- I'd recommend using a ul, ol, or even table -->
+		<!-- Also, if you'd like each list item to be on multiple lines, you can use <br> to break a line -->
 		<p> Dreamforce 2016: Directed and trained 20 convention staff members on registration process held at Salesforce’s headquarters office. Ran entire front desk operations ensuring crowd control, and proper coordination of employee issues.</p>
 		<p>Dreamforce 2015: Entrusted with management duties at the Executive Summit section at Dreamforce convention with 20 event staff members. Assigned employees to private parties and serve as special escorts as needed. </p>
 		<p>Oracle OpenWorld 2016-2018: Worked alongside Branch Manager in developing staff schedule and tracked payroll during all areas of the conference. </p>
@@ -36,6 +65,10 @@
 
 	<h3></h3>
 
-<footer>Contact: gtelzrow@gmail.com</footer>
+<footer>
+	<!-- I would wrap the below in a paragraph tag -->
+	<!-- or add more contact info, and put it all in an unordered list -->
+	Contact: gtelzrow@gmail.com
+</footer>
 </body>
 </html>
