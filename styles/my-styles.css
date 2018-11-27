@@ -1,8 +1,21 @@
-section#intro blockquote{
-font-style: italic;}
-section#intro img {
-border-style: solid; color: black; border-width: thick;} 
-body {font-family: cursive; font-size: 24px;
+.flex-nav ul{
+	display: flex;
+	border: 1px solid black;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex-direction:column;
+	justify-content:flex-center;
+	height: 100%;
+	align-items: stretch;
 }
-section#footer {font-size: 12px;
-	}
+.flex-nav li button{
+	flex: 3;
+	justify-content: space-around;
+	align-items: center;
+
+
+}
+
+}
+
