@@ -1,8 +1,18 @@
 .intro {
 	text-align: center;
 }
-
-
+.intro blockquote {
+	font-style: italic;
+}
+.bio {
+	background-image: url('../pic/bg.jpg');
+	background-size: 1000px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#top {
+	font-color: white;
+}
 .wrapper {
 	width: 100%;
 	max-width: 960px;
